@@ -1,7 +1,18 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.style_logo{
+/*Standardization Across Browsers*/
+
+html,
+html *{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	
+}
+
+.style_picture{
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -9,4 +20,21 @@
 	max-width: 100%;
 	height: auto;
 }
+.style_sections ul{
+	list-style-type: none;
+	
+}
+.style_sections ul li a{
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	padding: 5px;
+	
+}
 
+/*Tablet View*/
+
+@media (min-width: 768px){
+}
