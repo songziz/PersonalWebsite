@@ -35,6 +35,10 @@ html *{
 	
 }
 
+.section_header{
+	text-transform: capitalize;
+	
+}
 /*Tablet View*/
 
 @media (min-width: 768px){
