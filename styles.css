@@ -9,7 +9,11 @@ html *{
 	margin: 0px;
 	box-sizing: border-box;
 	font-family:'Open Sans', sans-serif !important;
+	background-color: #292826;
 	
+}
+.position-relative{
+	position: relative !important;
 }
 
 .style_picture{
@@ -17,17 +21,28 @@ html *{
 	margin-right: auto;
 	display: block;
 	object-fit: contain;
-	max-width: 100%;
-	height: auto;
 }
+.center h1{
+  	position: absolute;
+  	left: 0;
+  	top: 30%;
+ 	width: 100%;
+  	text-align: center;
+  	font-size: 45px;
+  	color: white;
+  	background-color: transparent;
+  	font: bolder;
+}
+
 .style_sections ul{
 	list-style-type: none;
 	padding: 20px;
 	
 }
+
 .style_sections ul li a{
 	text-decoration: none;
-	color: black;
+	color: white;
 	text-align: center;
 	display: block;
 	text-transform: uppercase;
@@ -37,17 +52,26 @@ html *{
 
 .section h2{ /*Titles of sections*/
 	text-transform: capitalize;
-	color: #292826;
+	color: #F9D342;
 	text-align: center;
 	padding: 10px;
 	
 }
 
 .section h4{ /*Quote of each section*/
-	color: dimgray;
+	color: gray;
 	text-align: center;
 	padding-bottom: 20px;
 	
+}
+
+.subsection h2{
+	font-size: 20px;
+	text-align: left;
+	position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 /*Tablet View*/
 
