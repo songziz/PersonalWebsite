@@ -35,8 +35,18 @@ html *{
 	
 }
 
-.section_header{
+.section h2{ /*Titles of sections*/
 	text-transform: capitalize;
+	color: #292826;
+	text-align: center;
+	padding: 10px;
+	
+}
+
+.section h4{ /*Quote of each section*/
+	color: dimgray;
+	text-align: center;
+	padding-bottom: 20px;
 	
 }
 /*Tablet View*/
