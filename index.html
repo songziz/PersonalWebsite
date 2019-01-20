@@ -6,12 +6,13 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body onResize="resizing()">
 	<header>
 		<div class= "position-relative">
-			<img id="top" class="style_picture" src="images/plainsofwildwest.jpg" alt="Background" style = "height: 821px"/>
+			<img id="top" class="style_picture" src="images/plainsofwildwest-16_9.jpg" alt="Background" style = "height: 821px"/>
 			<div class="center">
-				<h1>Zizhen Song</h1>
+				<h1 tag="text">Zizhen Song</h1>
+				<h3 tag="text">Software Engineer</h3>
 			</div>
 		</div>
 		<nav class="style_sections">
@@ -26,10 +27,11 @@
 		</nav>
 		<script>
 			var backgroundpic = document.getElementById('top');
-			var resizing = function(){
+			function resizing(){
 				backgroundpic.style.height = innerHeight + "px";
+				
 			}
-			var timer =  setInterval(resizing, 500);
+			resizing();
 		</script>
 	</header>
 	
