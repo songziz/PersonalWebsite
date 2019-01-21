@@ -12,6 +12,13 @@ html *{
 	background-color: #292826;
 	
 }
+
+.avatar{
+	vertical-align: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
 .position-relative{
 	position: relative !important;
 }
@@ -31,21 +38,24 @@ html *{
   	font: bolder;
 	background-color: rgb(0,0,0); /* Fallback color */
   	background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
-	border: 4px solid white;
+	border: px solid white;
 	transform: translate(-50%, -50%);
   	z-index: 2;
-  	width: 80%;
+  	width: 57%;
   	padding: 20px;
+	height: auto;
 }
 
 .center h1{
-	font-size: 6vw;
+	font-size: 5vw;
 	background-color: transparent;
-	padding-bottom: 10px;
+	padding-bottom: 1vw;
+	padding-top: 1vw;
 }
 .center h3{
 	font-size: 3vw;
 	background-color: transparent;
+	padding-bottom: 1vw;
 }
 
 .style_sections ul{
@@ -61,7 +71,13 @@ html *{
 	display: block;
 	text-transform: uppercase;
 	padding: 5px;
+	font-size: 3vw;
 	
+}
+.section{
+	width: 90%;
+	transform: translate(5%, 0);
+  	z-index: 2;
 }
 
 .section h2{ /*Titles of sections*/
@@ -69,6 +85,7 @@ html *{
 	color: #F9D342;
 	text-align: center;
 	padding: 10px;
+	font-size: 5vw;
 	
 }
 
@@ -80,8 +97,8 @@ html *{
 }
 
 .subsection h2{
-	font-size: 20px;
-	text-align: left;
+	font-size: 3.5vw;
+	text-align: center;
 	position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -96,6 +113,15 @@ html *{
 	.style_sections ul{
 		text-align: center;
 	}
+	.style_sections ul li a{
+		font-size: 1.5vw;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.section h2{
+		font-size: 4vw;
+	}
+	
 }
 
 /*Desktop View*/
