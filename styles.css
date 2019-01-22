@@ -83,6 +83,9 @@ html *{
 	font-size: 3vw;
 	
 }
+.style_sections ul li a:hover{
+	text-decoration: underline;
+}
 .section{
 	width: 90%;
 	transform: translate(5%, 0);
