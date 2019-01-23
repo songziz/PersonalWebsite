@@ -83,7 +83,7 @@ html *{
 
 .style_sections ul{
 	list-style-type: none;
-	padding: 30px;
+	padding: 2vw;
 	
 }
 
@@ -93,7 +93,7 @@ html *{
 	text-align: center;
 	display: block;
 	text-transform: uppercase;
-	padding: 5px;
+	padding: 0.5vw;
 	font-size: 3vw;
 	
 }
@@ -104,10 +104,11 @@ html *{
 	width: 90%;
 	transform: translate(5%, 0);
   	z-index: 2;
-	padding: 20px;
+	padding: 1vw;
+
 }
-.sticky +.section{
-	padding-top: 102px;
+.sticky ~.section{
+	padding-top: 8vw !important;
 }
 .section h2{ /*Titles of sections*/
 	text-transform: capitalize;
