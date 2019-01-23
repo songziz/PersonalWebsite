@@ -23,14 +23,8 @@ html *{
   	margin-left: auto;
   	margin-right: auto;
 }
-.position-relative{
-	position: relative !important;
-}
 
-.header{
-	z-index: 3;
-	
-}
+
 .sticky{
 	position:fixed;
 	top: 0;
@@ -82,6 +76,10 @@ html *{
 /*---Top Title---*/
 
 
+.header{
+	z-index: 3;
+	
+}
 
 .style_sections ul{
 	list-style-type: none;
