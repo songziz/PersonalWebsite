@@ -27,12 +27,26 @@ html *{
 	position: relative !important;
 }
 
+.header{
+	z-index: 3;
+	
+}
+.sticky{
+	position:fixed;
+	top: 0;
+	width: 100%;
+}
+
 .style_picture{
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	object-fit: contain;
 }
+
+
+
+/*---Top Title---*/
 .center {
   	position: absolute;
 	left: 50%;
@@ -50,7 +64,6 @@ html *{
 	padding-right: 8vw;
 	height: auto;
 }
-
 .center h1{
 	font-size: 5vw;
 	background-color: transparent;
@@ -66,10 +79,13 @@ html *{
 	padding-bottom: 1vw;
 	font-weight: 300;
 }
+/*---Top Title---*/
+
+
 
 .style_sections ul{
 	list-style-type: none;
-	padding: 20px;
+	padding: 30px;
 	
 }
 
@@ -90,8 +106,11 @@ html *{
 	width: 90%;
 	transform: translate(5%, 0);
   	z-index: 2;
+	padding: 20px;
 }
-
+.sticky +.section{
+	padding-top: 102px;
+}
 .section h2{ /*Titles of sections*/
 	text-transform: capitalize;
 	color: #F9D342;
