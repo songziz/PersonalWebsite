@@ -187,6 +187,9 @@ html *{
 	line-height: 2vw;
 	font: 300;
 }
+.location{
+	color: orange;
+}
 .row {
 	padding-top: 0;
 	padding-bottom: 2vw;
