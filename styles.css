@@ -14,22 +14,24 @@ html *{
 	font-weight: 370;
 	
 }
-
 .avatar{
 	vertical-align: center;
-	width: 300px;
-	height: 300px;
+	width: 25vw;
+	height: 25vw;
 	border-radius: 50%;
 	display: block;
   	margin-left: auto;
   	margin-right: auto;
 }
 
-
+.topalign h3{
+	padding-top: 0 !important;
+	text-align: left !important;
+}
 .sticky{
 	position:fixed;
 	top: 0;
-	width: 100%;
+	width: 100%;  
 }
 
 .style_picture{
@@ -106,7 +108,7 @@ html *{
 	width: 70%;
 	transform: translate(20%, 0);
   	z-index: 2;
-	padding: 1vw;
+
 
 }
 .sticky ~.section{
@@ -116,8 +118,9 @@ html *{
 	text-transform: capitalize;
 	color: #F9D342;
 	text-align: center;
-	padding: 10px;
+	padding: 2vw;
 	padding-bottom: 0.5vw;
+	padding-top: 3vw;
 	font-size: 4vw;
 	
 }
@@ -127,7 +130,7 @@ html *{
 	text-align: center;
 	padding: 0.5vw 8vw;
 	padding-bottom: 3vw;
-	font-size: 1.7vw;
+	font-size: 1.8vw;
 	font-weight: 300;
 }
 
@@ -157,18 +160,20 @@ html *{
 .col-lf{
 	width: 45%;
 }
+.col-lf p{
+	font-size: 1vw;
+}
 .col-rt{
 	width: 55%;
 	padding-left: 5vw;
 }
-.col-rt h5{
-}
+
 .row h4{
 	text-align: left;
 	color: white;
 	padding: 0;
 	padding-bottom: 1vw;
-	font-size: 1.5vw ;
+	font-size: 2.1vw ;
 }
 .row p{
 	font-size: 1vw;
@@ -183,7 +188,7 @@ html *{
 
 .col-details{
 	color: lightgrey;
-	font-size: 1vw;
+	font-size: 1.2vw;
 	line-height: 2vw;
 	font: 300;
 }
@@ -193,6 +198,12 @@ html *{
 .row {
 	padding-top: 0;
 	padding-bottom: 2vw;
+}
+.icon{
+	display: inline-block;
+	background: url("images/iconemail.png") no-repeat;
+    height: 64px;
+    width: 64px;
 }
 /*Tablet View*/
 
