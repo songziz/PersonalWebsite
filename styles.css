@@ -209,11 +209,23 @@ html *{
 	font-size: 1vw;
 	
 }
+.link{
+	display: inline-block;
+	position: relative;
+	left: 2%;
+	top: 30%;
+	font-size: 1.0vw;
+	
+}
 .icon{
 	display: inline-block;
-	background: url("images/iconemail.png") no-repeat;
-    height: 64px;
-    width: 64px;
+	vertical-align:sub;
+    height: 16px;
+    width: 16px;
+}
+.align-center{
+	padding-left: 24vw;
+	margin-top: 3vw;
 }
 /*Tablet View*/
 
@@ -231,6 +243,10 @@ html *{
 	}
 	.section h2{
 		font-size: 4vw;
+	}
+	.icon{
+		height:32px;
+		width: 32px;
 	}
 	
 }
