@@ -12,6 +12,7 @@ html *{
 	background-color: #292826;
 	overflow-x: hidden;
 	font-weight: 370;
+	scroll-behavior: smooth;
 	
 }
 .avatar{
@@ -25,7 +26,7 @@ html *{
 }
 
 .topalign h3{
-	padding-top: 0 !important;
+	padding-top: 0.2vw !important;
 	text-align: left !important;
 }
 .sticky{
@@ -112,7 +113,7 @@ html *{
 
 }
 .sticky ~.section{
-	padding-top: 8vw !important;
+	padding-top: 7vw !important;
 }
 .section h2{ /*Titles of sections*/
 	text-transform: capitalize;
