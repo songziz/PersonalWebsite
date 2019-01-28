@@ -209,6 +209,11 @@ html *{
 	font-size: 1vw;
 	
 }
+.fa{
+	padding-right: 2px;
+	padding-left: 1px;
+	padding-top: 2px;
+}
 .link{
 	display: inline-block;
 	position: relative;
