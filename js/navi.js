@@ -6,7 +6,6 @@ $(document).ready(function(){
 	
 	$('.slide').click(function(e) {
 		var linkHref = $(this).attr('href');
-		console.log(headerHeight);
 		
 		$('html, body').animate({
 			scrollTop: $(linkHref).offset().top - headerHeight
@@ -14,4 +13,8 @@ $(document).ready(function(){
 		
 		e.preventDefault();
 	});
+	
+	/*$('.col-md ul li').mouseenter(function(){
+		$(this).animate({left: '20px'});
+	});*/
 });

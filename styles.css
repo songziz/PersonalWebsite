@@ -233,6 +233,30 @@ html *{
 	padding-left: 24vw;
 	margin-top: 3vw;
 }
+.col-md{
+	width: 60%;
+	transform: translate(40%, 0);
+  	z-index: 2;
+	
+}
+.col-md ul li{
+	padding: 0.5vw 0vw;
+}
+
+.abilityScr{
+	float: right;
+	color: #F9D342;
+	top: 0.5vw;
+	font-size: 1.2vw;
+	
+}
+.abilityTxt{
+	color: white;
+	font-size: 1.4vw;
+}
+.centered{
+	text-align: center;
+}
 /*Tablet View*/
 
 @media (min-width: 768px){
