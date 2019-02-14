@@ -14,7 +14,12 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 	
-	/*$('.col-md ul li').mouseenter(function(){
-		$(this).animate({left: '20px'});
-	});*/
+	$(".col-md ul li").hover(function(){
+		$(this).find('.abilityTxt').css("color","#F9D342");
+		$(this).find('.fa-star').css("padding-left","0.3vw");
+		}, function(){
+		$(this).find('.abilityTxt').css("color","white");
+		$(this).find('.fa-star').css("padding-left","0vw");
+		}
+	);
 });

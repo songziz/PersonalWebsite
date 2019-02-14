@@ -223,6 +223,11 @@ html *{
 	color: #F9D342;
 	
 }
+.link2{
+	font-size: 1.0vw;
+	color: #F9D342;
+	
+}
 .icon{
 	display: inline-block;
 	vertical-align:sub;
@@ -240,8 +245,9 @@ html *{
 	
 }
 .col-md ul li{
-	padding: 0.5vw 0vw;
+	padding: 0.3vw 0vw;
 }
+
 
 .abilityScr{
 	float: right;
@@ -253,6 +259,9 @@ html *{
 .abilityTxt{
 	color: white;
 	font-size: 1.4vw;
+}
+.fa-star{
+	
 }
 .centered{
 	text-align: center;
