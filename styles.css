@@ -266,6 +266,44 @@ html *{
 .centered{
 	text-align: center;
 }
+
+figure {
+	margin: 0;
+	position: relative;
+}
+
+figure.effect{
+	color: #FFF !important;
+	padding: none;
+}
+
+figure.effect img{
+}
+
+figure figcaption {
+	padding: 3vw;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+	right: 0vw;
+	bottom: 0vw;
+	visibility: visible;
+	background: rgba(41,40,38,0.70) ;
+	
+}
+.vw3around{
+	padding: 3vw;
+}
+figcaption {
+	color: white;
+}
+figcaption h3{
+	background: none;
+	font-size: 1.5vw;
+}
+figcaption p{
+	background: none;
+}
 /*Tablet View*/
 
 @media (min-width: 768px){

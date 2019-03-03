@@ -3,6 +3,7 @@ $(document).ready(function(){
 	
 	//header height
 	var headerHeight = $('nav').outerHeight();
+	$("figure").find("figcaption").fadeOut();
 	
 	$('.slide').click(function(e) {
 		var linkHref = $(this).attr('href');
@@ -20,6 +21,13 @@ $(document).ready(function(){
 		}, function(){
 		$(this).find('.abilityTxt').css("color","white");
 		$(this).find('.fa-star').css("padding-left","0vw");
+		}
+	);
+	
+	$("figure").hover(function(){
+		$(this).find("figcaption").fadeIn("slow");
+		}, function(){
+		$(this).find("figcaption").fadeOut();
 		}
 	);
 });
