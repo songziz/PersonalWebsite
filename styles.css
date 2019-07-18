@@ -332,5 +332,16 @@ figcaption p{
 
 /*Desktop View*/
 
-@media (min-width: 1024px){
+@media (max-width: 700px){
+	.abilityScr{
+
+		font-size: 1.5vh;
+		top: 0;
+		
+	}
+	.abilityTxt{
+
+		font-size: 1.5vh;
+
+	}
 }
