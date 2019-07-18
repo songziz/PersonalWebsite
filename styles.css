@@ -330,18 +330,30 @@ figcaption p{
 	
 }
 
-/*Desktop View*/
+/*Phone View*/
 
 @media (max-width: 700px){
+	
 	.abilityScr{
 
-		font-size: 1.5vh;
+		font-size: 2vh;
 		top: 0;
-		
 	}
 	.abilityTxt{
+		font-size: 2vh;
+	}
+	.col-md{
+		width: 100%;
+		transform: translate(0, 0);
+		z-index: 2;
+		
+	}
 
-		font-size: 1.5vh;
-
+	.section h2{ /*Titles of sections*/
+		padding: 2vw;
+		padding-bottom: 0.5vw;
+		padding-top: 3vw;
+		font-size: 4vh;
+		
 	}
 }
