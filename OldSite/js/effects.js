@@ -15,8 +15,12 @@ function myFunction() {
 
 	if (window.pageYOffset > sticky) {
 		header.classList.add("sticky");
+		//document.getElementById("logo").style.display="block";
+		$("#logo").fadeIn();
 	} else {
 		header.classList.remove("sticky");
+		//document.getElementById("logo").style.display="none";
+		$("#logo").fadeOut();
   }
 }
 

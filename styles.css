@@ -1,118 +1,102 @@
 @charset "UTF-8";
-/* CSS Document */
-
-/*Standardization Across Browsers*/
-
 html,
 html *{
 	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
+    margin: 0px;
 	font-family:'Open Sans', sans-serif ;
-	background-color: #292826;
-	overflow-x: hidden;
-	font-weight: 370;
-	
-}
-.avatar{
-	vertical-align: center;
-	width: 25vw;
-	height: 25vw;
-	border-radius: 50%;
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-}
+	background-color: #292826 ;
+    font-weight: 370;
 
-.topalign h3{
-	padding-top: 0.2vw !important;
-	text-align: left !important;
 }
-.sticky{
-	position:fixed;
-	top: 0;
-	width: 100%;  
+html{
+  scroll-behavior: smooth;
 }
-
-.style_picture{
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	object-fit: contain;
+.bg {
+    /* The image used */
+    background-image: url("images/plainsofwildwest-16_9_770.jpg");
+  
+    /* Full height */
+    height: 100%; 
+    display: block;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
 
 /*---Top Title---*/
 .center {
-  	position: absolute;
-	left: 50%;
-  	top: 50%;
-  	text-align: center;
-  	color: white;
-  	font: bolder;
-	background-color: rgb(0,0,0); /* Fallback color */
-  	background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
-	transform: translate(-50%, -50%);
-  	z-index: 2;
-  	width: 57%;
-  	padding: 3vw;
-	padding-left: 8vw;
-	padding-right: 8vw;
-	height: auto;
+    position: absolute;
+  left: 50%;
+    top: 50%;
+    text-align: center;
+    color: white;
+    font: bolder;
+  background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+  transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 57%;
+    padding: 3vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  height: auto;
 }
 .center h1{
-	font-size: 5vw;
-	background-color: transparent;
-	padding-bottom: 1vw;
-	padding-top: 1vw;
-	border-bottom: 1px solid #FFFFFF;
-    border-bottom-color: rgba(255,255,255,0.35);
-	font-weight: 500;
+  font-size: 2.5rem !important;
+  background-color: transparent;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  border-bottom: 1px solid #FFFFFF;
+  border-bottom-color: rgba(255,255,255,0.35);
+  font-weight: 500;
 
 }
 .center h3{
-	font-size: 4vw;
-	background-color: transparent;
-	padding-bottom: 1vw;
-	font-weight: 250;
+  color: white;
+  font-size: 2rem !important;
+  background-color: transparent;
+  padding-bottom: 1vw;
+  font-weight: 350;
 }
 /*---Top Title---*/
 
-
-.header{
-	z-index: 3;
-	
+/*---Navagation Bar---*/
+.menu ul, .menu{
+    padding: 0 !important;
+}
+.navbar{
+    display: none !important;
 }
 
-.style_sections ul{
-	list-style-type: none;
-	padding: 2vw;
-	
-}
-
-.style_sections ul li a{
+.menu ul li a{
 	text-decoration: none;
 	color: white;
 	text-align: center;
 	display: block;
 	text-transform: uppercase;
-	padding: 0.5vw;
-	font-size: 3vw;
+	
+	font-size: 2rem;
 	
 }
-.style_sections ul li a:hover{
+.menu ul li a:hover{
 	text-decoration: underline;
 }
-.section{
-	width: 70%;
-	transform: translate(20%, 0);
-  	z-index: 2;
 
-
+.menu ul li.active a{
+	color:  #F9D342 !important;
 }
-.sticky ~.section{
-	padding-top: 7vw !important;
+/*---Navagation Bar---*/
+
+.section{
+  padding: 2rem 0 2rem 0 ;
+  
 }
 .section h2{ /*Titles of sections*/
 	text-transform: capitalize;
@@ -121,239 +105,244 @@ html *{
 	padding: 2vw;
 	padding-bottom: 0.5vw;
 	padding-top: 3vw;
-	font-size: 4vw;
+  font-size: 4.5rem;
+  background: transparent;
 	
 }
 
 .section h4{ /*Quote of each section*/
-	color: lightgray;
+	color: lightgray !important;
 	text-align: center;
 	padding: 0.5vw 8vw;
 	padding-bottom: 3vw;
-	font-size: 1.8vw;
-	font-weight: 300;
+	font-size: 2rem;
+  font-weight: 300 !important;
 }
 
 .section p{
 	color: lightgray;
 }
-
-.subsection h2{
-	font-size: 3.5vw;
-	text-align: center;
-	position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.subcat h3{
-	color: #F9D342;
-	font-size: 3vw;
-	padding-bottom: 2.5vw;
-	padding-top: 2.5vw;
-	
-	
-}
-.col-lf, .col-rt {
-  	float: left;
-}
-.col-lf{
-	width: 45%;
-}
-.col-lf p{
-	font-size: 1vw;
-}
-.col-rt{
-	width: 55%;
-	padding-left: 5vw;
-}
-
-.row h4{
-	text-align: left;
-	color: white;
-	padding: 0;
-	padding-bottom: 1vw;
-	font-size: 2.1vw ;
-}
-.row p{
-	font-size: 1vw;
-	font: 100;
-}
-.title{
-	text-align: left !important;
-	color: white;
-	padding-bottom: 20px;
-	font-size: 1.5vw;
-}
-
-.col-details{
-	color: lightgrey;
-	font-size: 1.2vw;
-	line-height: 2vw;
-	font: 300;
-}
-.location{
-	color: orange;
-}
-.row {
-	padding-top: 0;
-	padding-bottom: 2vw;
-}
-.row ul li a{
-	text-decoration: none;
-	color: white;
-	text-align: left;
+.avatar{
+  float: center;
+	width: 23.5rem;
+	height: 23.5rem;
+	border-radius: 50%;
 	display: block;
-	text-transform: uppercase;
-	padding: 0.5vw;
-	font-size: 1vw;
-	
-}
-.fa{
-	padding-right: 2px;
-	padding-left: 1px;
-	padding-top: 2px;
-}
-.link{
-	display: inline-block;
-	position: relative;
-	left: 2%;
-	top: 30%;
-	font-size: 1.0vw;
-	color: #F9D342;
-	
-}
-.link2{
-	font-size: 1.0vw;
-	color: #F9D342;
-	
-}
-.icon{
-	display: inline-block;
-	vertical-align:sub;
-    height: 16px;
-    width: 16px;
-}
-.align-center{
-	padding-left: 24vw;
-	margin-top: 3vw;
-}
-.col-md{
-	width: 70%;
-	transform: translate(25%, 0);
-  	z-index: 2;
-	
-}
-.col-md ul li{
-	padding: 0;
-	margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-.abilityScr{
-	float: right;
-	color: #F9D342;
-	font-size: 3vh;
-	top: 0;
-	
-}
-.abilityTxt{
-	color: white;
-	font-size: 3vh;
-	top:0;
-}
-.fa-star{
-	
-}
-.centered{
-	text-align: center;
+.col-md-7, .col-md-5, .row{
+  padding: 0 ;
+  margin: 0 !important;
 }
 
-figure {
-	margin: 0;
-	position: relative;
+.subcat{
+  padding: 2.5rem !important;
+  vertical-align: middle;
 }
 
-figure.effect{
-	color: #FFF !important;
-	padding: none;
+h3, .h3 {
+  color: #F9D342;
+  padding-bottom: 1.5rem;
+  font-size: 2.5rem !important;
 }
 
-figure.effect img{
+h5, .h5 {
+  color: white;
+  padding-bottom: 0rem;
+  font-size: 1.8rem !important;
+}
+span{
+  color: lightgrey;
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+.column{
+  padding: 1rem 3rem 1rem 3rem !important;
+}
+.column-skinny{
+  padding: 1rem 3rem 1rem 3rem ;
+}
+
+.location{
+  color:#F9D342;
+  padding-top: 0.2rem;
+}
+.row{
+  margin-bottom: 2rem !important;
+}
+.appear{
+  opacity: 100%;
+}
+
+.resumeDownload{
+  text-decoration: none;
+  
+}
+
+/* Projects Section*/
+
+.projectPic{
+  width: 100%;
+  height: auto;
 }
 
 figure figcaption {
-	padding: 3vw;
-    position: absolute;
-    top: 0vw;
-    left: 0vw;
+	padding:1rem;
+  position: absolute;
+  top: 0%;
+  left: 0vw;
 	right: 0vw;
 	bottom: 0vw;
 	visibility: visible;
-	background: rgba(41,40,38,0.70) ;
-	
+  background: rgba(41,40,38,0.70) ;
+  
 }
-.vw3around{
-	padding: 3vw;
+
+.figText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
 }
-figcaption {
-	color: white;
+
+figcaption h3, p, h4{
+  color: white !important;
+  background: none;
+  margin: 0;
+  border: 0;
+  
+}
+figcaption h3, h4{
+  padding: 0 !important;
+  text-align: center;
+  font-weight: 700 !important;
 }
 figcaption h3{
-	background: none;
-	font-size: 1.5vw;
+  font-size: 2.1rem !important;
 }
+
 figcaption p{
-	background: none;
+  font-size: 1.4rem;
+  padding: 0rem;
+  text-align: center;
 }
-/*Tablet View*/
+
+.no-bullets{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.icon{
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+}
+.icon-linkedin{
+  background: url(images/iconlinkedin.png) !important;
+}
+.icon-github{
+  background: url(images/icongithub.png) !important;
+}
+.icon-email{
+  background: url(images/iconemail.png) !important;
+}
+#contact a {
+  display: block;
+  line-height: 32px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  
+}
+a:link, a:visited {
+  color: #F9D342;
+  background-color: none;
+  text-decoration: none !important;
+}
+
+/* mouse over link */
+a:hover, a:active{
+  text-decoration: none !important;
+  color: white !important;
+}
+#experiences{
+  background-color: #353C3F;
+}
+#contact{
+  background-color: #353C3F;
+  padding-bottom: 8rem;
+  padding-top: 3rem;
+}
+i, p, .row, .column, span, h5, .h5, h4, .h4, h3, .h3, .col-md-7, .col-md-5, .col-md-12 , a, li, ul,.column-skinny{
+  background: transparent !important;
+}
+
+
+@media (min-width: 430px){
+  #contact a {
+    font-size: 16px;
+  }
+
+}
 
 @media (min-width: 768px){
-	.style_sections ul li{
-		display: inline-block;
-	}
-	.style_sections ul{
-		text-align: center;
-	}
-	.style_sections ul li a{
-		font-size: 1.5vw;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	.section h2{
-		font-size: 4vw;
-	}
-	.icon{
-		height:32px;
-		width: 32px;
-	}
-	
+    .menu ul{
+        padding: 10px;
+    }
+    .menu ul li a{
+        padding: 1.5vh 1.5vw 1.5vh !important;
+    }
+    .navbar{
+        display: flex !important;
+    }	
+    .avatar{
+      float: right;
+    }
+    .subcat{
+      padding: 2.5rem 6rem 2.5rem 2.5rem !important;
+    }
+    .column{
+      padding: 1rem 12rem 1rem 12rem !important;
+    }
+    .row{
+      margin-bottom: 3rem !important;
+    }
+    h5, .h5 {
+      padding-bottom: 1.5rem;
+    }
+    .appear{
+      opacity: 0;
+    }
+    figcaption h3{
+      font-size: 1.8rem !important;
+    }
+    figcaption p{
+      font-size: 1.2rem;
+    }
+    .bg{
+      background-image: url("images/plainsofwildwest-16_9_1080.jpg");
+    }
+    .center h1{
+      font-size: 4.5rem !important;
+    }
+    .center h3{
+      font-size: 3.5rem !important;
+    }
+
+
 }
 
-/*Phone View*/
+@media (min-width: 1200px ){
+  .subcat{
+    padding: 2.5rem 15rem 2.5rem 2.5rem !important;
+  }
+  .bg{
+    background-image: url("images/plainsofwildwest-16_9.jpg");
+  }
 
-@media (max-width: 700px){
-	
-	.abilityScr{
-
-		font-size: 2vh;
-		top: 0;
-	}
-	.abilityTxt{
-		font-size: 2vh;
-	}
-	.col-md{
-		width: 100%;
-		transform: translate(0, 0);
-		z-index: 2;
-		
-	}
-
-	.section h2{ /*Titles of sections*/
-		padding: 2vw;
-		padding-bottom: 0.5vw;
-		padding-top: 3vw;
-		font-size: 4vh;
-		
-	}
 }
+

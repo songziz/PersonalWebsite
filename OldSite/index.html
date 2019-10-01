@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zizhen Song - Software Developer - Interactive Resume</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="icon" type="image/png" href="/images/favicon.png"/>
+	</head>
+
+<body onResize="resizing()">
+	<header>
+		<div class= "position-relative">
+			<img id="top" class="style_picture" src="images/plainsofwildwest-16_9.jpg" alt="Background" style = "height: 821px"/>
+			
+			<div class="center">
+			  <h1 tag="text">Zizhen Song</h1>
+			  <h3 tag="text">Interactive Resume</h3>
+			</div>
+		</div>
+		
+		
+		
+	</header>
+	
+	<main >
+		<img src="images/personalLogoGold.png" id ="logo" alt = "personal logo" style = "height:75px; position: fixed; bottom:20px; right:20px; background: none; z-index: 50; display:none;animation-duration: 2s;"/>
+		
+		<div class="header" id= "myHeader"> 
+			<nav class="style_sections">
+				<ul>
+					<li><a href="#profile" class="slide">Profile</a></li>
+					<li><a href="#experiences" class="slide">Experiences</a></li>
+					<li><a href="#abilities" class="slide">Abilities</a></li>
+					<li><a href="#projects" class="slide">Projects</a></li>
+					<li><a href="#contact" class="slide">Contact</a></li>
+
+				</ul>
+			</nav>
+			
+		</div>
+		<div class="section"> 
+			<div id="profile">
+				<h2>Profile</h2>
+				<h4>I'm a software engineer</h4>
+				<hr><br><br><br><br>
+				<div class="row">
+					<div class="col-lf">
+						<img src="images/BnWProfilePic.jpg" alt="Avatar" class="avatar"/>
+					</div>
+
+					<div class= "subcat col-rt topalign col-details">
+						<h3>About Me</h3>
+						<span>I am an undergraduate at the University of Washington who is currently pursuing a BS in computer engineering, expecting to graduate in June 2022. I am an enthusiastic programmer with experience in working with abstract data types, machine learning, and now web-development! I love exploring what the web has to offer and trying to implement them in my own projects. I also love meeting and working with new people. As the saying goes: “teamwork makes the dream work”. </span>
+					</div>
+				</div>
+				<br><br>
+				
+			</div>
+
+			<div id="experiences">
+				<h2>Experiences</h2>
+				<h4>“People never learn anything by being told, they have to find out for themselves.” ― Paulo Coelho</h4>
+				<hr/>
+				<div class ="subcat">
+					<h3>Educations</h3>
+				</div>
+			  	<div class= "row">
+					<div class="col-lf">
+						<h4>University of Washington</h4>
+						<p>Sep 2018 - Current</p>
+					</div>
+					<div class="col-rt">
+						<h4 class="title">Bachelor - Computer Engineering </h4>
+						<span class= "col-details">I am currently pursuing a Bachelor of Science degree in Computer Engineering. Courses that I have taken include topics such as Java-based data abstraction and encapsulation, multivariable calculus, and linear algebra. <br> 3.8/4.0 GPA<br></span>
+
+					 <span class="col-details location">
+						 <i class="fa fa-map-pin" aria-hidden="true"></i>
+						 Seattle, WA 
+					</span>
+					</div>
+				</div>
+				<div class= "row">
+					<div class="col-lf">
+						<h4>Issaquah</h4>
+						<p>Sep 2014 - Jun 2018</p>
+					</div>
+					<div class="col-rt">
+						<h4 class="title">High School </h4>
+						<span class= "col-details">I graduated high school with distinction in the field mathematics. It was during the 3rd year in here that I realized that I wanted to go into software development.<br>  </span>
+						<span class="col-details location">
+							<i class="fa fa-map-pin" aria-hidden="true"></i>
+							Issaquah, WA</span>
+					</div>
+				</div>
+				<div class ="subcat">
+					<h3>Careers</h3>
+				</div>
+				<div class= "row">
+					<div class="col-lf">
+						<h4>UW Cell Biomechanics Lab</h4>
+						<p>May 2019 - Current</p>
+					</div>
+					<div class="col-rt">
+						<h4 class="title">Image-Processing Lab Assistant </h4>
+						<span class= "col-details">I am currently an assistant at UW’s Cell Biomechanics Lab. I work with fellow lab members on the research of heart tissues and platelet mechanics. My work involves the extraction and analysis of image data from .nd2 files using MATLAB. I strive to formulate more efficient and accurate methods of analyzing mechanical properties of human cells. <br> </span>
+
+					 <span class="col-details location">
+						 <i class="fa fa-map-pin" aria-hidden="true"></i>
+						 Seattle, WA 
+					</span>
+					</div>
+				</div>
+			  	<div class= "row">
+					<div class="col-lf">
+						<h4>Issaquah Cafe</h4>
+						<p>Sep 2017 - Sep 2018</p>
+					</div>
+					<div class="col-rt">
+						<h4 class="title">Host </h4>
+						<span class= "col-details">Responsible for greeting customers, guiding them to their seats, and bringing refreshments. Trains new hosts when needed and oversaw the assignment of daily task to other members of the team. Regularly updates safety analysis sheet to address health concerns. <br> </span>
+
+					 <span class="col-details location">
+						 <i class="fa fa-map-pin" aria-hidden="true"></i>
+						 Issaquah, WA 
+					</span>
+					</div>
+				</div>
+				<div class= "row">
+					<div class="col-lf">
+						<h4>Oki Golf</h4>
+						<p>Aug 2018</p>
+					</div>
+					<div class="col-rt">
+						<h4 class="title">Turf Worker </h4>
+						<span class= "col-details">Responsible for maintaining the greeneries of a 18 hole golf course and a Northwest-style clubhouse. Responsible for mowing lawns, raking bunkers, and edging sidewalks.<br>  </span>
+						<span class="col-details location">
+							<i class="fa fa-map-pin" aria-hidden="true"></i>
+							Sammamish, WA</span>
+					</div>
+				</div>
+				<div class= "row">
+					<div class="col-lf">
+						<h4>Kumon</h4>
+						<p>Mar 2016 - Mar 2017</p>
+					</div>
+					<div class="col-rt">
+						<h4 class="title">Tutor </h4>
+						<span class= "col-details">Responsible for tutoring students ranging from kindergarteners to 10th grader on math and reading. Assist students with difficult topics and grades their work for timely feedback.<br>  </span>
+						<span class="col-details location">
+							<i class="fa fa-map-pin" aria-hidden="true"></i>
+							Bellevue, WA</span>
+					</div>
+				</div>
+			</div>
+			<div class ="subcat">
+					<h3>Volunteering</h3>
+				</div>
+			  	<div class= "row">
+					<div class="col-lf">
+						<h4>Maple Hall Council</h4>
+						<p>Oct 2018 - Jan 2019</p>
+					</div>
+					<div class="col-rt">
+						<h4 class="title">Assistant Director of Recruitment and Retention </h4>
+						<span class= "col-details">Maple Hall Council is an organization ran motivated individuals who help to make Maple Hall feel more like a home for approximately 900 residents. I coordinated weekly activities at general meetings and facilitated large quarterly events. In addition, I was in charge of community recognition efforts for distinguishing individuals who have gone above and beyond for Maple Hall.   <br> </span>
+
+					 <span class="col-details location">
+						 <i class="fa fa-map-pin" aria-hidden="true"></i>
+						 Seattle, WA 
+					</span>
+					</div>
+				</div>
+				<div class= "row">
+					<div class="col-lf">
+						<h4>Bellevue Arts Museum</h4>
+						<p>Oct 2016 - Mar 2017</p>
+					</div>
+					<div class="col-rt">
+						<h4 class="title">Internship - Activity Coordinator </h4>
+						<span class= "col-details">I was in charge of running a weekly arts and crafts workshop for elementary children at the Bellevue Arts Museum (BAM). Over the course of six months, I planned and organized ten different activities including Gingerbread House Decoration December. <br>  </span>
+						<span class="col-details location">
+							<i class="fa fa-map-pin" aria-hidden="true"></i>
+							Bellevue, WA</span>
+					</div>
+				</div>
+
+			<div id="abilities">
+				<h2>Abilities</h2>
+				<h4>“No thief, however skillful, can rob one of knowledge, and that is why knowledge is the best and safest treasure to acquire.” <br>― L. Frank Baum</h4>
+				<hr>
+				
+				<div class ="subcat centered">
+					<h3>Skills</h3>
+				</div>
+				<div class="row">
+					<div class ="col-md">
+						<ul>
+							<li>
+								<span class="abilityTxt">
+									Java
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							<li>
+								<span class="abilityTxt">
+									CSS
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							<li>
+								<span class="abilityTxt">
+									HTML
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							<li>
+								<span class="abilityTxt">
+									JavaScript
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							<li>
+								<span class="abilityTxt">
+									SQL
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							<li>
+								<span class="abilityTxt">
+									Keras
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							<li>
+								<span class="abilityTxt">
+									Python
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							<li>
+								<span class="abilityTxt">
+									TensorFlow
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							
+							
+						</ul>
+					</div>
+				</div>
+				<div class ="subcat centered">
+					<h3>Languages</h3>
+				</div>
+				<div class="row">
+					<div class ="col-md">
+						<ul>
+						  <li> <span class="abilityTxt"> English </span> <span class="abilityScr"> <em class="fas fa-star" aria-hidden="true"></em> <em class="fas fa-star" aria-hidden="true"></em> <em class="fas fa-star" aria-hidden="true"></em> <em class="fas fa-star" aria-hidden="true"></em> <em class="fas fa-star" aria-hidden="true"></em> </span> </li>
+						  <li>
+								<span class="abilityTxt">
+									Mandarin Chinese
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							<li>
+								<span class="abilityTxt">
+									Japanese
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							
+							
+							
+						</ul>
+					</div>
+				</div>
+				<div class ="subcat centered">
+					<h3>Tools</h3>
+				</div>
+				<div class="row">
+					<div class ="col-md">
+						<ul>
+							<li>
+								<span class="abilityTxt">
+									MS Office (10+ years)
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							<li>
+								<span class="abilityTxt">
+									Visual Studio Code
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+						  	<li> 
+							  	<span class="abilityTxt"> Git </span> 
+							  	<span class="abilityScr"> 
+								  	<em class="fas fa-star" aria-hidden="true"></em> 
+								  	<em class="fas fa-star" aria-hidden="true"></em> 
+								  	<em class="fas fa-star" aria-hidden="true"></em>
+								  	<em class="fas fa-star" aria-hidden="true"></em> 
+								  	<em class="far fa-star" aria-hidden="true"></em> 
+							  	</span> 
+								</li>
+						  	<li>
+								<span class="abilityTxt">
+									Adobe Dreamweaver
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							<li>
+								<span class="abilityTxt">
+									Eclipse
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							<li>
+								<span class="abilityTxt">
+									Adobe Photoshop
+								</span>
+								<span class="abilityScr">
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="fas fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+									<i class="far fa-star" aria-hidden="true"></i>
+								</span>
+							</li>
+							
+							
+							
+						</ul>
+					</div>
+				</div>
+				<!--<span class= "col-details align-center">  This project is using HTML, CSS, and Javascript.
+					<a href="https://github.com/HolderOfTime99" target="_blank"> 
+						<div class="link2 align-center"> 
+							See project on Github
+						</div>
+					</a>
+				</span>-->
+
+			</div>
+
+			<div id="projects">
+				<h2>Projects</h2>
+				<h4>“Man cannot discover new oceans unless he has the courage to lose sight of the shore.” ― Andre Gide</h4>
+				<hr>
+				<div class="row">
+					<div class="col-lf vw3around" style= "float: left">
+						<figure class="effect">
+							<a href="https://itunes.apple.com/gb/app/longest-chimney/id1449384671#?platform=iphone" target="_blank">
+								<img src="images/1024storeicon.png" class="projectimg" alt="Longest Chimney" style="width:100%">
+								<figcaption >
+									<h3>
+										Longest Chimney <br>iOS Game
+									</h3>
+									<hr> <br>
+									<p>
+										Built and published on App Store
+										<br> <br>
+										Have you ever wondered what it's like to climb down your chimney? Well, now you have the opportunity to join Mr. Blue on his journey down the world's longest chimney!
+
+									</p>
+								</figcaption>
+							</a>
+						</figure>
+					
+					</div>
+					<div class="col-rt">
+					
+					</div>
+				
+				</div>
+			</div>
+
+			<div id="contact">
+				<h2>Contact</h2>
+				<h4>“Invisible threads are the strongest ties.” <br>― Friedrich Nietzsche</h4>
+				<hr>
+				<div class="row align-center">
+					<ul>
+						<li>
+							<a href="https://www.linkedin.com/in/zizhen-song" target="_blank">
+								<img class="icon" src="images/iconlinkedin.png" alt="linkedin">
+								<div class="link"> 
+									linkedin.com/in/zizhen-song
+								</div>
+								
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/HolderOfTime99" target="_blank">
+								<img class="icon" src="images/icongithub.png" alt="github">
+								<div class="link">
+									github.com/HolderOfTime99
+								</div>
+								
+							</a>
+						</li>
+						<li>
+							<a href="mailto:zizhensong@gmail.com" target="_blank">
+								<img class="icon" src="images/iconemail.png" alt="email">
+								<div class="link"> 
+									zizhensong@gmail.com
+								</div>
+							</a>
+						</li>
+					</ul>
+					
+				
+				</div>
+			</div>
+		</div>
+	<!-- jQuery -->
+	<script src="js/jQuery/jquery.js"></script>
+	<script src="js/navi.js"></script>
+	<script>
+		var backgroundpic = document.getElementById('top');
+		function resizing(){
+			backgroundpic.style.height = innerHeight + "px";
+		}
+		resizing();
+	</script>
+	<script type ="text/javascript" src="js/effects.js"></script>
+	
+	</main>
+</body>
+</html>
