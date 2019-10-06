@@ -105,7 +105,7 @@ body, html{
 	padding: 2vw;
 	padding-bottom: 0.5vw;
 	padding-top: 3vw;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   background: transparent;
 	
 }
@@ -331,6 +331,9 @@ i, p, .row, .column, span, h5, .h5, h4, .h4, h3, .h3, .col-md-7, .col-md-5, .col
     }
     .center h3{
       font-size: 3.5rem !important;
+    }
+    .section h2{
+      font-size: 4.5rem;
     }
 
 
