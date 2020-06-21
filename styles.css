@@ -13,7 +13,7 @@ html{
 }
 .bg {
     /* The image used */
-    background-image: url("images/plainsofwildwest-16_9_770.jpg");
+    /* background-image: url("images/plainsofwildwest-16_9_770.jpg"); */
   
     /* Full height */
     height: 100%; 
@@ -32,12 +32,12 @@ body, html{
 
 /*---Top Title---*/
 .center {
-    position: absolute;
+  position: absolute;
   left: 50%;
-    top: 50%;
-    text-align: center;
-    color: white;
-    font: bolder;
+  top: 50%;
+  text-align: center;
+  color: white;
+  font: bolder;
   background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
   transform: translate(-50%, -50%);
@@ -105,7 +105,7 @@ body, html{
 	padding: 2vw;
 	padding-bottom: 0.5vw;
 	padding-top: 3vw;
-  font-size: 3.5rem !important;
+  font-size: 3rem;
   background: transparent;
 	
 }
@@ -113,9 +113,9 @@ body, html{
 .section h4{ /*Quote of each section*/
 	color: lightgray !important;
 	text-align: center;
-	padding: 0.5vw 8vw;
+	padding:  1rem 2rem 1rem 2rem !important;
 	padding-bottom: 3vw;
-	font-size: 2rem;
+	font-size: 1.75rem;
   font-weight: 300 !important;
 }
 
@@ -124,8 +124,8 @@ body, html{
 }
 .avatar{
   float: center;
-	width: 23.5rem;
-	height: 23.5rem;
+	width: 21.5rem;
+	height: 21.5rem;
 	border-radius: 50%;
 	display: block;
   margin-left: auto;
@@ -138,29 +138,33 @@ body, html{
 }
 
 .subcat{
-  padding: 2.5rem !important;
+  padding: 2rem !important;
   vertical-align: middle;
 }
 
 h3, .h3 {
   color: #F9D342;
   padding-bottom: 1.5rem;
-  font-size: 2.5rem !important;
+  font-size: 2rem !important;
 }
 
 h5, .h5 {
   color: white;
   padding-bottom: 0rem;
-  font-size: 1.8rem !important;
+  font-size: 1.35rem !important;
 }
-span{
-  color: lightgrey;
-  font-size: 1.25rem;
+span, span ul li{
+  color: lightgrey ;
+  font-size: 1.25rem ;
   font-weight: 200;
+}
+span ul{
+  padding-left: 2rem;
+  margin-bottom: 0rem;
 }
 
 .column{
-  padding: 1rem 3rem 1rem 3rem !important;
+  padding: 1rem 2rem 0rem 2rem !important;
 }
 .column-skinny{
   padding: 1rem 3rem 1rem 3rem ;
@@ -180,6 +184,13 @@ span{
 .resumeDownload{
   text-decoration: none;
   
+}
+
+.experienceImages{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 /* Projects Section*/
@@ -222,11 +233,11 @@ figcaption h3, h4{
   font-weight: 700 !important;
 }
 figcaption h3{
-  font-size: 2.1rem !important;
+  font-size: 1.5rem !important;
 }
 
 figcaption p{
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   padding: 0rem;
   text-align: center;
 }
@@ -277,8 +288,54 @@ a:hover, a:active{
   padding-bottom: 8rem;
   padding-top: 3rem;
 }
-i, p, .row, .column, span, h5, .h5, h4, .h4, h3, .h3, .col-md-7, .col-md-5, .col-md-12 , a, li, ul,.column-skinny{
+i, p, .row, .column, span, h5, .h5, h4, .h4, h3, .h3, .col-md-7, .col-md-5, .col-md-12 , a, li, ul,.column-skinny, .projectInfo{
   background: transparent !important;
+}
+.col-md-7, .col-md-5, .col-md-12 {
+  padding: 0 !important;
+}
+.card {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(16, 24, 32, 0.8) !important;
+  background-color: rgba(16, 24, 32, 0.85) !important;
+  margin-bottom: 18px;
+}
+.card-body, .text-muted{
+  background-color: transparent;
+}
+.card-title{
+  color: #F9D342;
+  margin-bottom: 0 !important;
+}
+
+.projectInfo {
+  padding: 0 16px;
+}
+.projectInfo h3{
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+  font-size: 1.5rem;
+}
+.projectType{
+  color: lightgray !important;
+}
+.skill {
+  border: 1px solid #50a9d1;
+  color: white;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: auto;
+  display: inline-block;
+  font-size: 0.65rem;
+  line-height: 1.33333em;
+  padding: 6px 15px;
+  margin-top: 0.8em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
 }
 
 
@@ -313,6 +370,7 @@ i, p, .row, .column, span, h5, .h5, h4, .h4, h3, .h3, .col-md-7, .col-md-5, .col
     }
     h5, .h5 {
       padding-bottom: 1.5rem;
+      font-size: 1.8rem !important;
     }
     .appear{
       opacity: 0;
@@ -334,8 +392,34 @@ i, p, .row, .column, span, h5, .h5, h4, .h4, h3, .h3, .col-md-7, .col-md-5, .col
     }
     .section h2{
       font-size: 4.5rem !important;
+      padding-top: 2.5rem !important;
     }
-
+    .section h4{
+      font-size: 2rem !important;
+      padding: 0.5vw 8vw !important;
+    }
+    h3, .h3 {
+      font-size: 2.5rem !important;
+    }
+    .avatar{
+      margin-top: 2.5rem !important;
+    }
+    .col-md-7, .col-md-5, .col-md-12 {
+      padding: 0px 15px !important;
+    }
+    .projectInfo h3{
+      font-size: 1.8rem !important;
+    }
+    .card{
+      opacity: 0.6;
+      transition: opacity .5s ease-in-out;
+      -moz-transition: opacity .5s ease-in-out;
+      -webkit-transition: opacity .5s ease-in-out;
+    }
+    .card:hover{
+      opacity: 1 !important;
+    }
+    
 
 }
 
@@ -345,6 +429,10 @@ i, p, .row, .column, span, h5, .h5, h4, .h4, h3, .h3, .col-md-7, .col-md-5, .col
   }
   .bg{
     background-image: url("images/plainsofwildwest-16_9.jpg");
+  }
+  .experienceImages{
+    display: block;
+    width: 300px;
   }
 
 }

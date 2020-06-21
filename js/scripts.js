@@ -30,15 +30,15 @@ $(document).ready(function () {
 
     });
   })
-  if ($(window).width() >=768){
-    $("figure").hover(function(){
-      $(this).find("figcaption").fadeIn("slow");
-      }, function(){
-      $(this).find("figcaption").fadeOut();
-      }
-    );
-    $("figure").find("figcaption").fadeOut();
-  }
+  // if ($(window).width() >=768){
+  //   $("figure").hover(function(){
+  //     $(this).find("figcaption").fadeIn("slow");
+  //     }, function(){
+  //     $(this).find("figcaption").fadeOut();
+  //     }
+  //   );
+  //   $("figure").find("figcaption").fadeOut();
+  // }
   $( window ).resize(function() {
     aligncontacts();
   });
@@ -56,4 +56,7 @@ $(document).ready(function () {
       $( ".column-skinny").css("padding-left", "1rem");
     }
   }
+  
 });
+
+document.querySelector(".card-flip").classList.toggle("flip");
