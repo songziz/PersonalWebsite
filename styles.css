@@ -1,325 +1,201 @@
-@charset "UTF-8";
-html,
-html *{
-	padding: 0px;
-    margin: 0px;
-	font-family:'Open Sans', sans-serif ;
-	background-color: #292826 ;
-    font-weight: 370;
+/*
+  Name: Zizhen Song
+  Date: July 25, 2020
+*/
 
+:root {
+  /* --dark-clay: #1f2833;
+  --teal: #66FCF1;
+  --gold: #66FCF1;
+  --dark-brown: #080c10;
+  --light-gray: #c5c6c7;
+  --white: white;
+  --terminal-green: #16C60C; */
+
+  --dark-clay: #353C3F;
+  --teal: #66FCF1;
+  --gold: #F9D342;
+  --dark-brown: #292826;
+  --light-gray: lightgray;
+  --white: white;
+  --terminal-green: #16C60C;
+  --padding-web: 15vw;
+  --padding-mobile: 10vw;
+  --nav-height: 8vh;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
-.bg {
-    /* The image used */
-    /* background-image: url("images/plainsofwildwest-16_9_770.jpg"); */
-  
-    /* Full height */
-    height: 100%; 
-    display: block;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-body, html{
-    height: 100%;
-    width: 100%;
-    margin: 0;
+
+body {
+  background-color: var(--dark-clay);
+  overflow-x: hidden;
+  font-size: 1.25rem;
 }
 
-/*---Top Title---*/
-.center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  text-align: center;
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('img/background-16-9-1080.jpg');
   color: white;
-  font: bolder;
-  background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
-  transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 57%;
-    padding: 3vw;
-  padding-left: 8vw;
-  padding-right: 8vw;
-  height: auto;
-}
-.center h1{
-  font-size: 2.5rem !important;
-  background-color: transparent;
-  padding-bottom: 1vw;
-  padding-top: 1vw;
-  border-bottom: 1px solid #FFFFFF;
-  border-bottom-color: rgba(255,255,255,0.35);
-  font-weight: 500;
 
-}
-.center h3{
-  color: white;
-  font-size: 2rem !important;
-  background-color: transparent;
-  padding-bottom: 1vw;
-  font-weight: 350;
-}
-/*---Top Title---*/
-
-/*---Navagation Bar---*/
-.menu ul, .menu{
-    padding: 0 !important;
-}
-.navbar{
-    display: none !important;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
 }
 
-.menu ul li a{
-	text-decoration: none;
-	color: white;
-	text-align: center;
-	display: block;
-	text-transform: uppercase;
-	
-	font-size: 2rem;
-	
-}
-.menu ul li a:hover{
-	text-decoration: underline;
+header h1 {
+  font-size: 14vw;
+  padding-bottom: 0.5vh;
+  border-bottom: 1px solid white;
+  font-family: 'Permanent Marker', cursive;
 }
 
-.menu ul li.active a{
-	color:  #F9D342 !important;
-}
-/*---Navagation Bar---*/
-
-.section{
-  padding: 2rem 0 2rem 0 ;
-  
-}
-.section h2{ /*Titles of sections*/
-	text-transform: capitalize;
-	color: #F9D342;
-	text-align: center;
-	padding: 2vw;
-	padding-bottom: 0.5vw;
-	padding-top: 3vw;
-  font-size: 3rem;
-  background: transparent;
-	
+header h3 {
+  font-size: 5vh;
 }
 
-.section h4{ /*Quote of each section*/
-	color: lightgray !important;
-	text-align: center;
-	padding:  1rem 2rem 1rem 2rem !important;
-	padding-bottom: 3vw;
-	font-size: 1.75rem;
-  font-weight: 300 !important;
+#navbar {
+  height: var(--nav-height);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #080c10; /* var(--dark-brown); */
+  font-size: 4vh;
 }
 
-.section p{
-	color: lightgray;
-}
-.avatar{
-  float: center;
-	width: 21.5rem;
-	height: 21.5rem;
-	border-radius: 50%;
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
+#navbar a:link, #navbar a:visited {
+  color: var(--light-gray);
+  margin: 0 2vw;
+  cursor: pointer;
+
+  /* left to right highlight */
+  overflow: hidden;
+  background: linear-gradient(to right, var(--gold), var(--gold) 50%, var(--light-gray) 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 375ms ease;
 }
 
-.col-md-7, .col-md-5, .row{
-  padding: 0 ;
-  margin: 0 !important;
+#navbar a:hover {
+  background-position: 0 100%;
 }
 
-.subcat{
-  padding: 2rem !important;
-  vertical-align: middle;
-}
-
-h3, .h3 {
-  color: #F9D342;
-  padding-bottom: 1.5rem;
-  font-size: 2rem !important;
-}
-
-h5, .h5 {
-  color: white;
-  padding-bottom: 0rem;
-  font-size: 1.35rem !important;
-}
-span, span ul li{
-  color: lightgrey ;
-  font-size: 1.25rem ;
-  font-weight: 200;
-}
-span ul{
-  padding-left: 2rem;
-  margin-bottom: 0rem;
-}
-
-.column{
-  padding: 1rem 2rem 0rem 2rem !important;
-}
-.column-skinny{
-  padding: 1rem 3rem 1rem 3rem ;
-}
-
-.location{
-  color:#F9D342;
-  padding-top: 0.2rem;
-}
-.row{
-  margin-bottom: 2rem !important;
-}
-.appear{
-  opacity: 100%;
-}
-
-.resumeDownload{
+a, a:hover {
   text-decoration: none;
-  
+  color: var(--white);
 }
 
-.experienceImages{
-  display: block;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 30px;
+.row {
+  padding-bottom: 20px;
 }
 
-/* Projects Section*/
-
-.projectPic{
-  width: 100%;
-  height: auto;
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: var(--padding-mobile);
+  padding-right: var(--padding-mobile);
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 20px;
 }
 
-figure figcaption {
-	padding:1rem;
-  position: absolute;
-  top: 0%;
-  left: 0vw;
-	right: 0vw;
-	bottom: 0vw;
-	visibility: visible;
-  background: rgba(41,40,38,0.70) ;
-  
+section h2, section h3, section a {
+  color: var(--gold);
 }
 
-.figText{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: none;
+section p, section h4 {
+  color: var(--light-gray);
 }
 
-figcaption h3, p, h4{
-  color: white !important;
-  background: none;
-  margin: 0;
-  border: 0;
-  
-}
-figcaption h3, h4{
-  padding: 0 !important;
-  text-align: center;
-  font-weight: 700 !important;
-}
-figcaption h3{
-  font-size: 1.5rem !important;
-}
-
-figcaption p{
-  font-size: 0.9rem;
-  padding: 0rem;
+section h4, footer {
   text-align: center;
 }
 
-.no-bullets{
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+section h2 {
+  font-size: 3rem;
+  padding-top: 1rem;
 }
-.icon{
-  float: left;
-  width: 32px;
-  height: 32px;
-  margin-right: 20px;
+
+section h3 {
+  font-size: 2rem;
+  padding: 0.5rem 0;
 }
-.icon-linkedin{
-  background: url(images/iconlinkedin.png) !important;
+
+section h4 {
+  font-size: 1.75rem;
+  padding-bottom: 2rem;
 }
-.icon-github{
-  background: url(images/icongithub.png) !important;
+
+section h5 {
+  color: var(--white);
+  padding: 0.5rem 0;
 }
-.icon-email{
-  background: url(images/iconemail.png) !important;
+
+footer {
+  color: var(--white);
 }
-#contact a {
-  display: block;
-  line-height: 32px;
-  margin-bottom: 20px;
-  font-size: 12px;
-  
+
+.column {
+  width: 100%;
 }
-a:link, a:visited {
+
+.active {
+  text-decoration: underline;
+}
+
+#profile, #projects {
+  background-color: var(--dark-brown);
+}
+
+#profile-pic {
+  max-width: 18rem;
+  max-height: 18rem;
+  border-radius: 50%;
+  float: center;
+  margin-right: 0;
+}
+
+#contact-links a {
   color: #F9D342;
-  background-color: none;
-  text-decoration: none !important;
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
-/* mouse over link */
-a:hover, a:active{
-  text-decoration: none !important;
-  color: white !important;
-}
-#experiences{
-  background-color: #353C3F;
-}
-#contact{
-  background-color: #353C3F;
-  padding-bottom: 8rem;
-  padding-top: 3rem;
-}
-i, p, .row, .column, span, h5, .h5, h4, .h4, h3, .h3, .col-md-7, .col-md-5, .col-md-12 , a, li, ul,.column-skinny, .projectInfo{
-  background: transparent !important;
-}
-.col-md-7, .col-md-5, .col-md-12 {
-  padding: 0 !important;
-}
 .card {
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(16, 24, 32, 0.8) !important;
-  background-color: rgba(16, 24, 32, 0.85) !important;
+  border: 1px solid rgba(16, 24, 32, 0.8);
+  background-color: rgba(16, 24, 32, 0.85);
   margin-bottom: 18px;
 }
-.card-body, .text-muted{
-  background-color: transparent;
-}
-.card-title{
+
+.card-title {
   color: #F9D342;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
-.projectInfo {
-  padding: 0 16px;
+.card-body p {
+  font-size: 1rem;
 }
-.projectInfo h3{
-  padding-top: 1.5rem;
-  padding-bottom: 0;
-  font-size: 1.5rem;
+
+.card-body ul {
+  list-style-type: none;
+  display: inline;
+  padding-left: 0;
 }
-.projectType{
-  color: lightgray !important;
-}
-.skill {
+
+.card-body ul li {
   border: 1px solid #50a9d1;
   color: white;
   margin-right: 5px;
@@ -338,102 +214,134 @@ i, p, .row, .column, span, h5, .h5, h4, .h4, h3, .h3, .col-md-7, .col-md-5, .col
   border-radius: 8px;
 }
 
-
-@media (min-width: 430px){
-  #contact a {
-    font-size: 16px;
-  }
-
+.experience-images {
+  display: block;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-@media (min-width: 768px){
-    .menu ul{
-        padding: 10px;
-    }
-    .menu ul li a{
-        padding: 1.5vh 1.5vw 1.5vh !important;
-    }
-    .navbar{
-        display: flex !important;
-    }	
-    .avatar{
-      float: right;
-    }
-    .subcat{
-      padding: 2.5rem 6rem 2.5rem 2.5rem !important;
-    }
-    .column{
-      padding: 1rem 12rem 1rem 12rem !important;
-    }
-    .row{
-      margin-bottom: 3rem !important;
-    }
-    h5, .h5 {
-      padding-bottom: 1.5rem;
-      font-size: 1.8rem !important;
-    }
-    .appear{
-      opacity: 0;
-    }
-    figcaption h3{
-      font-size: 1.8rem !important;
-    }
-    figcaption p{
-      font-size: 1.2rem;
-    }
-    .bg{
-      background-image: url("images/plainsofwildwest-16_9_1080.jpg");
-    }
-    .center h1{
-      font-size: 4.5rem !important;
-    }
-    .center h3{
-      font-size: 3.5rem !important;
-    }
-    .section h2{
-      font-size: 4.5rem !important;
-      padding-top: 2.5rem !important;
-    }
-    .section h4{
-      font-size: 2rem !important;
-      padding: 0.5vw 8vw !important;
-    }
-    h3, .h3 {
-      font-size: 2.5rem !important;
-    }
-    .avatar{
-      margin-top: 2.5rem !important;
-    }
-    .col-md-7, .col-md-5, .col-md-12 {
-      padding: 0px 15px !important;
-    }
-    .projectInfo h3{
-      font-size: 1.8rem !important;
-    }
-    .card{
-      opacity: 0.6;
-      transition: opacity .5s ease-in-out;
-      -moz-transition: opacity .5s ease-in-out;
-      -webkit-transition: opacity .5s ease-in-out;
-    }
-    .card:hover{
-      opacity: 1 !important;
-    }
-    
-
+.slide-right-focus-in {
+  -webkit-animation: slide-right-focus-in 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right-focus-in 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.5s;
 }
 
-@media (min-width: 1200px ){
-  .subcat{
-    padding: 2.5rem 15rem 2.5rem 2.5rem !important;
-  }
-  .bg{
-    background-image: url("images/plainsofwildwest-16_9.jpg");
-  }
-  .experienceImages{
-    display: block;
-    width: 300px;
+@-webkit-keyframes slide-right-focus-in {
+  0% {
+    -webkit-transform: translateX(-75px);
+    transform: translateX(-75px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
   }
 
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
+@keyframes slide-right-focus-in {
+  0% {
+    -webkit-transform: translateX(-75px);
+    transform: translateX(-75px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.terminal {
+  background-color: black;
+  font-family: 'Courier Prime', monospace;
+  color: #CCCCCC;
+  border: 3px double #CCCCCC;
+  padding: 20px;
+  font-size: 8pt;
+  box-shadow: 10px 10px 20px black;
+}
+
+.terminal ul {
+  list-style: none;
+  padding: 0;
+}
+
+.terminal ul li:hover {
+  color: var(--terminal-green);
+}
+
+.terminal ul li:before {
+  content: '\00a0 \00a0 ';
+}
+
+.terminal ul li:hover:before {
+  content: '>\00a0 ';
+}
+
+@media (min-width: 768px) {
+  #navbar {
+    display: flex;
+  }
+
+  header {
+    height: 92vh;
+  }
+
+  header h1 {
+    font-size: 15vh;
+  }
+
+  section {
+    padding-left: var(--padding-web);
+    padding-right: var(--padding-web);
+
+    /* proper scrolling from nav bar */
+    margin-top: - var(--nav-height);
+    padding-top: var(--nav-height);
+    padding-bottom: var(--nav-height);
+  }
+
+  section h2 {
+    font-size: 4rem;
+    padding: 0;
+  }
+
+  #experiences {
+    z-index: 1000;
+  }
+
+  #profile-pic {
+    max-width: 21.5rem;
+    max-height: 21.5rem;
+    border-radius: 50%;
+    float: right;
+    margin-right: 2vw;
+  }
+
+  .card {
+    opacity: 0.6;
+    transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+  }
+
+  .card:hover {
+    opacity: 1;
+  }
+
+  .terminal {
+    font-size: 1.2vw;
+  }
+}
