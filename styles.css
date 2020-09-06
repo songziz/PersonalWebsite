@@ -133,10 +133,9 @@ section h3 {
 }
 
 section h4 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   padding-bottom: 2rem;
   padding-top: 1rem;
-  font-family: 'Dancing Script', cursive;
 }
 
 section h5 {
@@ -175,6 +174,24 @@ footer {
   margin-left: 0.5rem;
 }
 
+#project-spotlight{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.curly-brace {
+  width: 90%;
+  padding: 2rem;
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
 .card {
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(16, 24, 32, 0.8);
@@ -191,13 +208,13 @@ footer {
   font-size: 1rem;
 }
 
-.card-body ul {
+.card-body ul, #project-spotlight ul {
   list-style-type: none;
   display: inline;
   padding-left: 0;
 }
 
-.card-body ul li {
+.card-body ul li, #project-spotlight ul li {
   border: 1px solid #50a9d1;
   color: white;
   margin-right: 5px;
@@ -330,6 +347,10 @@ footer {
     border-radius: 50%;
     float: right;
     margin-right: 2vw;
+  }
+
+  #project-spotlight {
+    display: flex;
   }
 
   .card {
