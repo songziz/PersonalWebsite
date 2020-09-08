@@ -16,5 +16,18 @@ $(document).ready(function () {
         sectionLink.removeClass('active');
       }
     });
+
+    // var profile = $('#profile > div');
+    // var windowHeight = $('#profile').outerHeight() + 1;
+
+    // if(windowHeight + currentPos <= profile.offset().top) {
+    //   profile.css("opacity", "0.0");
+    // } else if (windowHeight + currentPos >= profile.offset().top + 3 * windowHeight/4) {
+    //   profile.css("opacity", "1");
+    // } else {
+    //   var value = 1.0 * ((currentPos + windowHeight) - profile.offset().top - windowHeight/4) / (windowHeight/2);
+    //   console.log(value)
+    //   profile.css({ opacity: value });
+    // }
   });
 });
