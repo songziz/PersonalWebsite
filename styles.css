@@ -76,6 +76,7 @@ header h3 {
   color: var(--light-gray);
   margin: 0 2vw;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 
   /* left to right highlight */
   overflow: hidden;
@@ -154,12 +155,106 @@ footer {
 }
 
 .active {
-  text-decoration: underline;
+  border-color: var(--gold) !important;
 }
 
 #profile, #projects {
   background-color: var(--dark-brown);
+}
 
+#profile > div {
+  background-image: url(img/svg/letter-background.svg);
+  height: 105vw;
+  width: 70vw;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#profile article {
+  padding: 10vw;
+}
+
+#profile article p {
+  font-size: 1.8vw;
+  color: var(--dark-clay);
+  font-family: 'Kalam', cursive;
+}
+
+#letter-counter {
+  font-size: 1.5vw !important;
+  color: gray !important;
+  margin: 0.5vw;
+}
+
+#polar-left, #polar-right {
+  cursor: pointer;
+}
+
+.polaroid-controls {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#letter-footer{
+  text-align: right;
+}
+
+#letter-end a{
+  color: blue;
+}
+
+#letter-end a:hover{
+  text-decoration: underline;
+}
+
+#letter-footer span {
+  font-family:'Mr De Haviland', cursive;
+  font-size: 4vw;
+}
+
+.polaroid a {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  background: #ffffff;
+  display: inline-block;
+  padding: 1vw 1vw 2.5vw;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+  cursor: auto;
+}
+
+.polaroid a:after {
+  color: #333;
+  font-size: 2vw;
+  content: attr(title);
+  position: relative;
+  top: 1vw;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.polaroid img {
+  display: block;
+  width: 20vw;
+  height: 16.5vw;
+}
+
+.polaroid a:hover {
+  -webkit-transform: scale(1.50);
+  -moz-transform: scale(1.50);
+  transform: scale(1.50);
+  z-index: 5;
+  -webkit-box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, .7);
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, .7);
 }
 
 #profile-pic {
@@ -168,6 +263,10 @@ footer {
   border-radius: 50%;
   float: center;
   margin-right: 0;
+}
+
+#experiences img {
+  border-radius: 20px;
 }
 
 #contact-links a {
@@ -241,6 +340,10 @@ footer {
   width: 80%;
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+.hidden {
+  display:none;
 }
 
 .slide-right-focus-in {
