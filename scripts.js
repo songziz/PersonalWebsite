@@ -7,9 +7,21 @@ $(document).ready(function () {
     `My name is Zizhen Song and I am a computer engineering student at the
     University of Washington.`, 'A bit about me:'];
   const LETTER_BODY =
-    [['img/sunset-background.jpg', 'Adventure Awaits!', ''],
-    ['img/sunset-background.jpg', 'Adventure Awaits', ''],
-    ['img/friends-lake22.jpg', 'Squad Up!', '']]
+    [['img/sunset-background.jpg', 'Adventure Awaits!',
+      `I seek the unknown, so that I can view what's familiar with
+      extra colors. After all, the world is full of abstractions.
+      The more you know, the more you see. And what is more exciting
+      than getting to the bottom of it all!?`],
+    ['img/desktop-art.jpg', 'Clickety Clack...',
+      `I must admit, things don't always go as planned when programming.
+      When faced with unforseen hurdles, I try to envision myself as a miner. I
+      carry on, tapping away at my keyboard like a miner with a pickax. No
+      matter how dark it gets, just a bit more 'til I strike gold!`],
+    ['img/friends-lake22.jpg', 'Squad Up!',
+      `People say "Rome wasn't built in a day." However, they often don't
+      mention that it wasn't build by one person either. To do great things,
+      we need great people, and to me there is nothing more enjoyable than
+      working in the company of some friends.`]]
   let profileStatus = 0;
   let curPolaroidIndex = 0;
 

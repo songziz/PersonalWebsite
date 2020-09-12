@@ -163,19 +163,19 @@ footer {
 }
 
 #profile > div {
-  background-image: url(img/svg/letter-background.svg);
-  height: 105vw;
-  width: 70vw;
+  background-image: url(img/svg/letter-background-mobile.svg);
+  height: 200vw;
+  width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #profile article {
-  padding: 10vw;
+  padding: 23vw 15vw;
 }
 
 #profile article p {
-  font-size: 1.8vw;
+  font-size: 3vw;
   color: var(--dark-clay);
   font-family: 'Kalam', cursive;
 }
@@ -213,12 +213,14 @@ footer {
   font-size: 4vw;
 }
 
+.polaroid {
+  margin:0 auto 15px;
+}
+
 .polaroid a {
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
   background: #ffffff;
   display: inline-block;
-  padding: 1vw 1vw 2.5vw;
+  padding: 1vw;
   text-align: center;
   text-decoration: none;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -237,14 +239,14 @@ footer {
   font-size: 2vw;
   content: attr(title);
   position: relative;
-  top: 1vw;
+  top: 0 px;
   font-family: 'Permanent Marker', cursive;
 }
 
 .polaroid img {
   display: block;
-  width: 20vw;
-  height: 16.5vw;
+  width: 18vw;
+  height: 15vw;
 }
 
 .polaroid a:hover {
@@ -449,16 +451,35 @@ footer {
     z-index: 1000;
   }
 
-  #profile-pic {
-    max-width: 21.5rem;
-    max-height: 21.5rem;
-    border-radius: 50%;
-    float: right;
-    margin-right: 2vw;
+  #profile > div {
+    height: 105vw;
+    width: 70vw;
+  }
+
+  #profile > div {
+    background-image: url(img/svg/letter-background.svg);
+  }
+
+  #profile article p {
+    font-size: 1.8vw;
+  }
+
+  #profile article {
+    padding: 10vw;
   }
 
   #project-spotlight {
     display: flex;
+  }
+
+  .polaroid a:after {
+    top: 1vw;
+  }
+
+  .polaroid a {
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    padding: 1vw 1vw 2.5vw;
   }
 
   .card {
