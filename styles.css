@@ -191,9 +191,10 @@ footer {
 }
 
 .polaroid-controls {
+  font-size: 20px !important;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: -50px;
+  right: 50px;
 }
 
 #letter-footer{
@@ -472,6 +473,13 @@ footer {
     display: flex;
   }
 
+  .polaroid-controls {
+    font-size: 30px !important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
   .polaroid a:after {
     top: 1vw;
   }
@@ -480,6 +488,10 @@ footer {
     -webkit-transform: rotate(-4deg);
     -moz-transform: rotate(-4deg);
     padding: 1vw 1vw 2.5vw;
+  }
+
+  #letter-detail {
+    font-size: 1.6vw !important;
   }
 
   #letter-footer span {
