@@ -210,7 +210,7 @@ footer {
 
 #letter-footer span {
   font-family:'Mr De Haviland', cursive;
-  font-size: 4vw;
+  font-size: 6vw;
 }
 
 .polaroid {
@@ -480,6 +480,10 @@ footer {
     -webkit-transform: rotate(-4deg);
     -moz-transform: rotate(-4deg);
     padding: 1vw 1vw 2.5vw;
+  }
+
+  #letter-footer span {
+    font-size: 4vw;
   }
 
   .card {
