@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  const TYPE_SPEED = 30;
-  const LINE_PAUSE = 1000;
-  const TRANSITION_TIME = 1500;
+  const TYPE_SPEED = 22;
+  const LINE_PAUSE = 600;
+  const TRANSITION_TIME = 1000;
   const LETTER_HEADER =
     ['Hello!', 'Welcome to my website.',
     `My name is Zizhen Song and I am a computer engineering student at the
@@ -89,6 +89,7 @@ $(document).ready(function () {
     $('#letter-end').hide();
     $('#polar-right').click(() =>nextPolaroid(1));
     $('#polar-left').click(() =>nextPolaroid(-1));
+    imagePreloading();
   }
 
   function initLetterBody() {
@@ -117,5 +118,12 @@ $(document).ready(function () {
       setCurrentPolaroid(curPolaroidIndex);
       $("#letter-body").animate({ opacity: 1 }, TRANSITION_TIME/2);
     });
+  }
+
+  function imagePreloading(){
+    for (let i =0; i < LETTER_BODY.length; i++) {
+      var img = new Image();
+      img.src = LETTER_BODY[i][0];
+    }
   }
 });
